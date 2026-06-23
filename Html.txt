@@ -1,0 +1,10 @@
+#Basic Html structure
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        Natani Guna sri
+    </body>
+</html>

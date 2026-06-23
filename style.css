@@ -1,0 +1,50 @@
+/*h1{
+    color:aqua;
+    font-style: italic;
+}*/
+p{
+    color:deeppink
+}
+/* class selector*/
+.title{
+    color:brown;
+}
+/*Id selector*/
+#main-heading{
+    color:coral;
+}
+/*universal selector*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*group selector*/
+h1,p{
+    color:black
+}
+/*Desecnder selector*/
+div li{
+    color:royalblue;
+}
+/*child selector*/
+div>li{
+    color:blueviolet;
+}
+/*Attribute selector*/
+input[type="text"]{
+    background-color: chartreuse;
+}
+input[type="password"]{
+    background-color: azure;
+}
+/*Colors*/
+h1{
+    /*naming of Colors*/
+    /*color:red;*/
+   /* Hexadecimal values: #RRGGBB*/
+   color:#0000ff
+   /*RGB -. 0- 255 */
+  /*color: rgb(235, 52, 100)*/
+  /*color:rgba(255,0,0,5)*/
+  /*HSL-Hue Saturation Lightness*/
+   /*color:hsl(344°, 82%, 56%);*/
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: lightyellow;
+    font-family: Arial;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+}
+
+p, li {
+    color: black;
+}
+
+a {
+    color: red;
+}
+
+img {
+    border: 3px solid blue;
+}
+
+table {
+    border: 2px solid black;
+    background-color: white;
+}
+
+th {
+    color: white;
+    background-color: blue;
+}
+
+td {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+}

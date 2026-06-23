@@ -1,0 +1,7 @@
+/*Attribute selector*/
+input[type="text"]{
+    background-color: chartreuse;
+}
+input[type="password"]{
+    background-color: azure;
+}

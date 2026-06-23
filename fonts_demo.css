@@ -1,0 +1,61 @@
+h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+}
+p{
+    /* controls thickness */
+    font-weight:bold ;
+    font-weight: 900;
+    /*
+    100-thin
+    300-Light
+    400-Normal
+    700-bold
+    900-extra bold*/
+    font-style:italic;
+}
+p{
+    font-style: italic;
+    font-weight: bold;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  short hand font property */
+p{
+    font:italic bold 20px Arial;
+    text-align:justify;
+}
+
+/*  Text Decoration */
+h1{
+    text-decoration: underline;
+    text-decoration: overline;
+}
+a{
+    text-decoration: none;
+}
+p{
+   text-transform: uppercase; 
+   text-transform: lowercase;
+   text-transform: capitalize; 
+}
+p{
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+.Box{
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    margin: 100px 40px 30px 40px ;
+    border: solid;
+    text-align: justify;
+    background-color: rgb(117, 110, 124);
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: chocolate;
+    border-radius:50%;
+    border:2px solid black;
+}
