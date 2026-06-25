@@ -1,0 +1,94 @@
+.box{
+    height: 80px;
+    width: 80px;
+    background: purple;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+@keyframes move{
+    from {
+        left: 0;
+    }
+    to{
+        left: 300px;
+    }
+}
+.box1{
+    height: 80px;
+    width: 80px;
+    background: teal;
+    /* animation-iteration-count: infinite; */
+    animation: colorchange 3s infinite alternate;
+    animation: colorchange 3s 3;
+}
+@keyframes colorchange{
+    from{
+        background: teal ;
+    }
+    to{
+        background: saddlebrown;
+    }
+}
+@keyframes bounce{
+    0%{left:0;background:teal;}
+    50%{left:200px;background: yellow;}
+    100%{left:0;background: chartreuse;}
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid lightcyan;
+    border-top: 5px solid blueviolet;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Mobilw view */
+.box1{
+    width: 100%;
+}
+/* Laptop */
+@media(min-width:768){
+    .box1{
+        width:80%
+    }
+}
+h1{
+    font-size: 40px;
+}
+@media(max-width:768px){
+    h1{
+        font-size: 24px;
+    }
+}
+/* 
+Mobile:576px
+Tablet:768px
+laptop:992px
+Desktop:1200px   */
+img{
+    /* overflow */
+    width:500px;
+}
+/* solution */
+img{
+    max-width: 100%;
+    height:auto;
+}
+:root{
+    --primary-color:#2563eb;
+    --secondary-color:#06b6d4;
+    --dark:#1f2937;
+
+}
+h5{
+    background: var(--primary-color);
+}

@@ -1,0 +1,164 @@
+div{
+    /* starts in a new line & Occupie full width*/
+    display: block;
+}
+span{
+    display: inline;
+}
+span{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background: tomato;
+}
+/* div{ 
+    /*display: none;*/
+    /*visibility: hidden;*/
+    /* overflow: hidden;(ides the excess content by this overflow) 
+     overflow: auto; (automatically customize it self by this over flow )
+
+}*/
+/* Position Properties*/
+/* div{
+    (position:static)
+    position: relative;
+    top: 5px;
+    left:20px
+} */
+/* .parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+h1{
+    position: sticky;
+    top:0;
+}  */
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    border: 2px;
+    text-align: center;
+    background: coral;
+   
+}
+/* nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+} */
+nav{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+/* Flexbox: row or column
+CSS Grid:row & columns */
+.container1{
+    display: grid;
+    /* create the column */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows:  100px 100px 100px 100px; */
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,3fr)); */
+    gap: 20px;
+    grid-template-areas: "header header"
+    "sidebar content"
+    "footer footer";
+}
+.item1{
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+}
+body{
+    background-color:lavenderblush;
+    background-image: url(dog.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    text-shadow:5px 2px 10px gray;
+}
+/* button:hover{
+    background: cornflowerblue;
+    color: white;
+} */
+input{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline:none
+}
+input:focus{
+    border: 2px solid blueviolet;
+}
+button:active{
+    transform: scale(0.95);
+}
+.box{
+    width: 100px;
+    height: auto;
+    background: red;
+}
+.box{
+     /* transform: translate(50px,20px); */
+      /* transform: rotate(45deg);  */
+     /* Reize my element */
+     transform: scale(1.5);
+}
+.card{
+    width: 200px;
+    height:200px;
+    background: goldenrod;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card{
+    transform: skew(20deg);
+}
+.card{
+    transform: translateY(-10px)
+    scale(1.1)
+    rotate(5deg)
+}
+.newbutton{
+    background: darkmagenta;
+    /* transition: 500ms; */
+}
+.newbutton:hover{
+    background: orangered;
+    /* transition: 1s; */
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
