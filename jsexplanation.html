@@ -1,0 +1,133 @@
+<!-- 
+ Js-is a high level dynamic programming language
+ used to make web pages interactive 
+ or responsive
+ HTML -> Structure 
+ CSS -> Styling
+ JS -> Functionality
+
+ Exceution Flow:
+                Source Code
+                    |
+                Interpreted
+                    |
+                Machine Execute one 
+                line at a time with JIT(Just In Time compiler)
+                    |
+                Machine Code
+JIT Definition:Is a Technique where code is complied
+into machine code while the program is running
+->Innstead of compiling everything beforehand
+JIT Compiler:JIT Compiler Identifies Frequently Excuted code
+("HOT code")
+It complies that code into optimized machine code
+
+JavaScripit(V8 Engine in chrome and node.js)
+
+How JS Works In Browser:
+        HTML File
+           |
+        Browser
+           |
+        HTML Parser
+           |
+        DOM Created(DOM-Docement )
+           |
+        Java Scripit Engine(js)
+           |
+        Page Updated
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Explanation</title>
+</head>
+<body>
+    <h1>WelCome To Chalapathi</h1>
+    <!-- <button onclick="showMessage()">Click Me</button> -->
+    <script>
+         // variables:
+         // var,let,const,---> Keywords
+         var account_num= 76856789
+
+         let a = 10;
+         let b = 20;
+         console.log(a);
+         console.log(b);
+
+         const year = 2007;
+         const pi = 3.14;
+         console.log(pi)
+
+         //let  year = 2009
+         //let a = 30;
+         var account_num=9867;
+         console.log(account_num)
+
+         var first_name="Guna Sri"
+
+         //Data types:
+         //1.Strings
+         let name ="Guna Sri";
+         console.log(typeof name)
+         //2.Number:
+         let num = 20;
+         console.log(typeof num)
+         //3.Boolean:
+         let isStudent = true;
+         console.log(typeof isStudent)
+         //4.Undefined:
+         let salary;
+         console.log(typeof salary)
+         //5.Null
+         let data = null;
+         console.log(typeof data)
+         //6.Object 
+         let student = {
+            name:"Guna Sri",
+            RollNo:80
+         };
+         console.log(typeof student)
+        //operators:
+        let x = 5;
+        let y = 6;
+        console.log(x+y)
+        //Assignment Operators
+        let d = 5;
+        d += 5
+        //comparision Operators:
+        // <,>..... 
+        //===(strictly equal to)
+        console.log(x === y)
+        //logical Operators:
+        //&&,|,!
+        // console.log(alert("WelCome To FullStack Classes")); 
+        //prompt:
+        //let number = prompt("Enter the number:")
+        //console.log(number)
+
+        //let result =  confirm("Are You Sure")
+        //console.log(result)
+
+        //Template Literal
+        let myname = "Guna Sri"
+        console.log("Hello"+myname)
+
+        console.log(`Hello${myname}`);
+
+        //Task: Take two numbers from user
+        //perform addition,sub,mul.div
+        //make sure to use template literal
+        // Take two numbers from user
+        let u = Number(prompt("Enter the first number:"));
+        let v = Number(prompt("Enter the second number:"));
+        console.log(`Addition: ${u + v}`);
+        console.log(`Subtraction: ${u - v}`);
+        console.log(`Multiplication: ${u * v}`);
+        console.log(`Division: ${u / v}`);
+    </script>
+</body>
+</html>
